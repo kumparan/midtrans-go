@@ -97,11 +97,17 @@ func (c *HttpClientImplementation) DoRequest(req *http.Request, result interface
 	res, err := c.HttpClient.Do(req)
 	if err != nil {
 		c.Logger.Error("Cannot send request: %v", err.Error())
-		return &Error{
+
+		midtransErr := &Error{
 			Message:    fmt.Sprintf("Error when request via HttpClient, Cannot send request with error: %s", err.Error()),
-			StatusCode: http.StatusInternalServerError,
 			RawError:   err,
 		}
+
+		if res!= nil{
+			midtransErr.StatusCode = res.StatusCode
+		}
+
+		return midtransErr
 	}
 
 	defer res.Body.Close()
