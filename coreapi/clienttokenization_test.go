@@ -1,7 +1,7 @@
 package coreapi
 
 import (
-	"github.com/kumparan/midtrans-go"
+	"github.com/midtrans/midtrans-go"
 	assert "github.com/stretchr/testify/require"
 	"log"
 	"testing"

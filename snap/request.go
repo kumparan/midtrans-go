@@ -1,7 +1,7 @@
 package snap
 
 import (
-	"github.com/kumparan/midtrans-go"
+	"github.com/midtrans/midtrans-go"
 )
 
 // RequestParamWithMap SnapReqWithMap : Represent snap request with map payload

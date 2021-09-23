@@ -1,7 +1,7 @@
 package coreapi
 
 import (
-	"github.com/kumparan/midtrans-go"
+	"github.com/midtrans/midtrans-go"
 )
 
 // ChargeReqWithMap : Represent Charge request with map payload

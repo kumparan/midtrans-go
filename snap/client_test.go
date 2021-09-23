@@ -2,7 +2,7 @@ package snap
 
 import (
 	"fmt"
-	"github.com/kumparan/midtrans-go"
+	"github.com/midtrans/midtrans-go"
 	assert "github.com/stretchr/testify/require"
 	"regexp"
 	"testing"

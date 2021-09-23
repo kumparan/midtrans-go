@@ -9,8 +9,8 @@ import (
     "path"
     "time"
     "strconv"
-	"github.com/kumparan/midtrans-go"
-	"github.com/kumparan/midtrans-go/coreapi"
+    "github.com/midtrans/midtrans-go"
+    "github.com/midtrans/midtrans-go/coreapi"
     "encoding/json"
 )
 
