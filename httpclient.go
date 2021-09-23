@@ -103,7 +103,7 @@ func (c *HttpClientImplementation) DoRequest(req *http.Request, result interface
 			RawError:   err,
 		}
 
-		if res!= nil{
+		if res != nil{
 			midtransErr.StatusCode = res.StatusCode
 		}
 
