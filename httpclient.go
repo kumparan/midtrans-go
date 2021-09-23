@@ -99,7 +99,7 @@ func (c *HttpClientImplementation) DoRequest(req *http.Request, result interface
 		c.Logger.Error("Cannot send request: %v", err.Error())
 		return &Error{
 			Message:    fmt.Sprintf("Error when request via HttpClient, Cannot send request with error: %s", err.Error()),
-			StatusCode: res.StatusCode,
+			StatusCode: http.StatusInternalServerError,
 			RawError:   err,
 		}
 	}
